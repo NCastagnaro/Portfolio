@@ -9,7 +9,7 @@
       @apply font-[Rubik]
   }
   li{
-     @apply px-4;  /*Added padding in the x axis of 4 pixels for each li */
+     @apply px-4;  /*Added padding in the x axis of 4 pixels for each li  */
      @apply cursor-pointer /* Applied the cursor pointer utility class to each li, which changes the mouse cursor to a pointing hand when hovering over that element.  */
   }
 }
