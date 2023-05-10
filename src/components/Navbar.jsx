@@ -43,7 +43,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link to="contact"  smooth={true}  duration={500}>
-                    contact
+                    Contact
                 </Link>
             </li>
         </ul>
@@ -58,23 +58,30 @@ const Navbar = () => {
         {/* Mobile Menu, once again, React Smooth Scroll is being used*/}
        <ul className = {!nav ? 'hidden' :'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>        {/*The 'hidden' className is used to hide an element from the user interface without removing it from the HTML document.  */}
             <li className = 'py-6 text-4xl'>
-                <Link to="home"  smooth={true}  duration={500}>
+                {/* Using handleClick here makes it so the mobile menu closes after we select which area we want to go to on the page`` */}
+                <Link onClick = {handleClick}  to="home"  smooth={true}  duration={500}>
                     Home
                 </Link>  
             </li>
             <li className = 'py-6 text-4xl'>
-                <Link to="about"  smooth={true}  duration={500}>
+                <Link onClick = {handleClick}  to="about"  smooth={true}  duration={500}>
                     About
                 </Link>
             </li>
             <li className = 'py-6 text-4xl'>
-                Skills
+                <Link onClick = {handleClick}  to="skills"  smooth={true}  duration={500}>
+                   Skills 
+                </Link>
             </li>
             <li className = 'py-6 text-4xl'>
-                Work
+                <Link  onClick = {handleClick} to="work"  smooth={true}  duration={500}>
+                    Work
+                </Link>
             </li>
             <li className = 'py-6 text-4xl'>
-                Contact
+                <Link onClick = {handleClick}  to="contact"  smooth={true}  duration={500}>
+                    Contact
+                </Link>
             </li>
         </ul>
 
