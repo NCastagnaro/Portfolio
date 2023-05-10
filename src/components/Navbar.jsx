@@ -3,7 +3,9 @@ import {FaBars,FaTimes,FaGithub,FaLinkedin} from 'react-icons/fa'   //FaBars, Fa
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logerino from '../assets/logo1.png'      //import our logo for initials from the logo1.png file
+// ES6 Imports
 
+import { Link} from 'react-scroll'
 
 const Navbar = () => {
     const [nav,setNav] = useState(false)
@@ -15,13 +17,35 @@ const Navbar = () => {
             <img src= {Logerino} alt="Logo Image" style = {{width:'50px'}}/>
         </div>
 
-        {/* Menu */}
+        {/* Menu, added in Link from smooth scroll npm docs  */}
+        {/* The names we set up for the 'to' property in the 'Link' component is to match what we used inside the component. So, for example, we use a 'name' property of 'home' in our Home component. 
+        If we set the 'to' property to 'home' it will match and help us smooth scroll to the Home component portion on the webpage */}
         <ul className = 'hidden md:flex'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li>
+                <Link to="home"  smooth={true}  duration={500}>
+                    Home
+                </Link>
+            </li>
+            <li>
+                <Link to="about"  smooth={true}  duration={500}>
+                    About
+                </Link>
+            </li>
+            <li>
+                <Link to="skills"  smooth={true}  duration={500}>
+                   Skills 
+                </Link>
+            </li>
+            <li>
+                <Link to="work"  smooth={true}  duration={500}>
+                    Work
+                </Link>
+            </li>
+            <li>
+                <Link to="contact"  smooth={true}  duration={500}>
+                    contact
+                </Link>
+            </li>
         </ul>
         
         {/* Hamburger Menu*/}
@@ -31,13 +55,27 @@ const Navbar = () => {
            {!nav ? <FaBars/> : <FaTimes />}
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu, once again, React Smooth Scroll is being used*/}
        <ul className = {!nav ? 'hidden' :'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>        {/*The 'hidden' className is used to hide an element from the user interface without removing it from the HTML document.  */}
-            <li className = 'py-6 text-4xl'>Home</li>
-            <li className = 'py-6 text-4xl'>About</li>
-            <li className = 'py-6 text-4xl'>Skills</li>
-            <li className = 'py-6 text-4xl'>Work</li>
-            <li className = 'py-6 text-4xl'>Contact</li>
+            <li className = 'py-6 text-4xl'>
+                <Link to="home"  smooth={true}  duration={500}>
+                    Home
+                </Link>  
+            </li>
+            <li className = 'py-6 text-4xl'>
+                <Link to="about"  smooth={true}  duration={500}>
+                    About
+                </Link>
+            </li>
+            <li className = 'py-6 text-4xl'>
+                Skills
+            </li>
+            <li className = 'py-6 text-4xl'>
+                Work
+            </li>
+            <li className = 'py-6 text-4xl'>
+                Contact
+            </li>
         </ul>
 
 
