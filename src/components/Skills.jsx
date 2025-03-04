@@ -9,6 +9,8 @@ import FireBase from '../assets/firebase.png';
 import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
 import Mongo from '../assets/mongo.png';
+import Python from '../assets/Python.png'
+import SQL from '../assets/SQL.png'
 
 const Skills = () => {
   return (
@@ -43,12 +45,13 @@ const Skills = () => {
                   <p className = ''>Node</p>
               </div>    
                 <div className = 'shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:bg-pink-400'>
-                  <a href="https://github.com/" target = 'blank'><img className = 'w-[80px] mx-auto' src={GitHub} alt="Github icon" /> </a>
-                  <p className = ''>Github</p>
+                  <a href="https://python.org" target = 'blank'><img className = 'w-[80px] mx-auto' src={Python} alt="Python icon" /> </a>
+                  <p className = ''>Python</p>
               </div>
               <div className = 'shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:bg-pink-400'>
-              <a href="https://tailwindcss.com/" target = 'blank'><img className = 'w-[80px] mx-auto' src={Tailwind} alt="Tailwind icon" /> </a>
-                  <p className = ''>Tailwind</p>
+              <a href="https://www.mysql.com/" target = 'blank'><img className = 'w-[80px]  h-[60px] mx-auto mt-2' src={SQL} alt="SQL icon" /> </a>
+              <p className="mt-2">SQL</p>
+
               </div>    
                 <div className = 'shadow-md shadow-[#040c16] hover:scale-110 duration-500 hover:bg-pink-400'>
                 <a href="https://www.mongodb.com/docs/" target = 'blank'><img className = 'w-[80px] mx-auto' src={Mongo} alt="Mongo icon" /> </a>
