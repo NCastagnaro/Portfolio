@@ -7,9 +7,9 @@ const Home = () => {
         
         {/* container */}
         <div className = 'max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full '>
-        <p className = 'text-pink-600'>Lorem, ipsum dolor.</p>
-        <h1 className = 'text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Lorem, ipsum dolor.</h1>
-        <h2 className = 'text-4xl sm:text-7xl font-bold text-[#8892b0]'>Lorem ipsum dolor sit amet.</h2>
+        <p className = 'text-pink-600'>Hi. My name is</p>
+        <h1 className = 'text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Nick Castagnaro</h1>
+        <h2 className = 'text-4xl sm:text-7xl font-bold text-[#8892b0]'>I'm a Full Stack Developer</h2>
         <p className = 'text-[#ccd6f6] py-4 max-w-[700]'>Results-driven professional with expertise in software engineering, solutions engineering, and client
 engagement. Passionate about leveraging technology to drive growth and client success.
 </p>
