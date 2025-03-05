@@ -17,10 +17,7 @@ const About = () => {
               <p>Hi. I'm Nick, nice to meet you. Please take a look around.</p>
             </div>
             <div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-               Qui voluptatibus fugiat quod! Dolorum asperiores libero repudiandae 
-               praesentium cumque, eius pariatur accusamus, vero alias quasi ipsa 
-               illo expedita, ut aperiam maiores?</p>  
+              <p>Below, you can view the projects and technologies in which I have utilized!</p>  
             </div>
           </div>
       </div>
